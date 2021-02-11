@@ -1,8 +1,29 @@
+body{
+
+}
+
 h1{
     color: orange;
 }
 img{
-    width: 100%;
     max-height: 40vh;
     object-fit: cover;
+    flex: 1;
+    margin: 3rem;
+}
+.image-galerie{
+    display: flex;
+    background-color: grey;
+}
+.para-galerie{
+    display:flex;
+}
+.para-galerie p{
+    flex: 1;
+    margin:48px;
+}
+
+input{
+    display: block;
+    margin: 1rem 0;
 }

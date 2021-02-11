@@ -1,1 +1,21 @@
 {% extends 'parent.html.twig' %}
+
+{% block titre1 %}
+<h1>Contact</h1>
+{% endblock %}
+
+{% block image1 %}
+<div class="image-contact">
+<img src="{{ asset('image/200x200-f7d1d2b98a1518fe58e87a4644a82233.jpg') }}" alt="photo1"> 
+</div>
+{% endblock %}
+
+{% block formulaireContact %}
+        <form action="post">
+            <input type="text" placeholder="Votre Nom">
+            <input type="text" placeholder="Votre Prénom">
+            <input type="text" placeholder="Votre E-mail">
+            <input type="textarea" placeholder="Voter message">
+            <button type="submit">Envoyer</button>
+        </form>
+        {% endblock %}

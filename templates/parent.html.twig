@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Mon projet Symfony </title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
+{% block main %}
 <body>
+{% endblock %}
     <header>
         <nav>
         <a href="{{ path('index') }}"> acceuil</a>
@@ -14,16 +16,28 @@
         <a href="{{ path('contact') }}"> contact</a>
         </nav>
     </header>
+
     <main>
         <section>
+        {% block titre1 %}
         <h1>MON TITRE 1</h1>
+        {% endblock %}
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quibusdam libero quae nulla, aliquid expedita reiciendis? Odio soluta excepturi, libero tenetur nisi beatae quos quas, facilis natus rerum provident? Consequatur!</p>
-        <img src="image/200x200-2867b506bcdc44a3be13e6a17cbc62d5.jpg">
+        {% block image1 %}
+        <div class="image-parent">
+        <img src="{{ asset('image/200x200-2867b506bcdc44a3be13e6a17cbc62d5.jpg') }}" alt="photo1"> 
+        </div>
+        {% endblock %}
         </section>
+
+        <section>
+        {% block formulaireContact %}
+        {% endblock %}
+       </section> 
     </main>
     <footer>
     <p> tout droits résérvés</p>
     </footer>
 
-<script src="js/script.js"></script>
+<script src="{{ asset('js/script.js') }}"></script>
 </body>

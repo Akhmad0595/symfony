@@ -1,1 +1,23 @@
 {% extends 'parent.html.twig' %}
+
+{% block main %}
+<body class="galerie">
+{% endblock %}
+
+{% block titre1 %}
+<h1>Galerie</h1>
+{% endblock %}
+
+{% block image1 %}
+<div class="image-galerie">
+    <img src="{{ asset('image/0c81b20e5621c7400f5ea8cc7380cdd7.jpg') }}" alt="photo1"> 
+    <img src="{{ asset('image/200x200-f7d1d2b98a1518fe58e87a4644a82233.jpg') }}" alt="photo1"> 
+    <img src="{{ asset('image/200x200-2867b506bcdc44a3be13e6a17cbc62d5.jpg') }}" alt="photo1"> 
+</div>
+<div class="para-galerie">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure dignissimos voluptatibus dolores officia esse doloremque tempora pariatur cumque excepturi! Accusamus sequi culpa esse magni vero qui ut facilis ad non?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure dignissimos voluptatibus dolores officia esse doloremque tempora pariatur cumque excepturi! Accusamus sequi culpa esse magni vero qui ut facilis ad non?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure dignissimos voluptatibus dolores officia esse doloremque tempora pariatur cumque excepturi! Accusamus sequi culpa esse magni vero qui ut facilis ad non?</p>
+</div>
+{% endblock %}
+
